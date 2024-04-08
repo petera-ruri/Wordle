@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Wordle</h1>
+        <div class="game-container">
+            <table>
+                <cell id="cell1">0</cell>
+                <cell id="cell2">1</cell>
+                <cell id="cell3">2</cell>
+                <cell id="cell4">3</cell>
+                <cell id="cell5">4</cell>
+                <cell id="cell6">5</cell>
+                <cell id="cell7">6</cell>
+                <cell id="cell8">7</cell>
+                <cell id="cell9">8</cell>
+                <cell id="cell10">9</cell>
+                <cell id="cell11">10</cell>
+                <cell id="cell12">11</cell>
+                <cell id="cell13">12</cell>
+                <cell id="cell14">13</cell>
+                <cell id="cell15">14</cell>
+                <cell id="cell16">15</cell>
+                <cell id="cell17">16</cell>
+                <cell id="cell18">17</cell>
+                <cell id="cell19">18</cell>
+                <cell id="cell20">19</cell>
+                <cell id="cell21">20</cell>
+                <cell id="cell22">21</cell>
+                <cell id="cell23">22</cell>
+                <cell id="cell24">23</cell>
+                <cell id="cell25">24</cell>
+                <cell id="cell26">25</cell>
+                <cell id="cell27">26</cell>
+                <cell id="cell28">27</cell>
+                <cell id="cell29">28</cell>
+                <cell id="cell30">29</cell>
+            </table>
+        </div>
+        <row>
+        <key id="keyStart" onclick="generateRandomWord()">Start</key>
+        <key id="keyEnter" onclick="checkWord()">Enter</key>
+        <key id="keyClear" onclick="clearCells()">Clear</key>
+        </row>
+        <div class="keyboard">
+            <keyboard>
+                <row>
+                    <key id="keyQ">Q</key>
+                    <key id="keyW">W</key>
+                    <key id="keyE">E</key>
+                    <key id="keyR">R</key>
+                    <key id="keyT">T</key>
+                    <key id="keyY">Y</key>
+                    <key id="keyU">U</key>
+                    <key id="keyI">I</key>
+                    <key id="keyO">O</key>
+                    <key id="keyP">P</key>
+                </row>
+                <row>
+                    <key id="keyA">A</key>
+                    <key id="keyS">S</key>
+                    <key id="keyD">D</key>
+                    <key id="keyF">F</key>
+                    <key id="keyG">G</key>
+                    <key id="keyH">H</key>
+                    <key id="keyJ">J</key>
+                    <key id="keyK">K</key>
+                    <key id="keyL">L</key>
+                </row>
+                <row>
+                    <key id="keyShift" onclick="shift()">Shift</key>
+                    <key id="keyZ">Z</key>
+                    <key id="keyX">X</key>
+                    <key id="keyC">C</key>
+                    <key id="keyV">V</key>
+                    <key id="keyB">B</key>
+                    <key id="keyN">N</key>
+                    <key  id="keyM">M</key>
+                    <key id="keyDel" onclick="deleteLetter()">Del</key>
+                    <key id="keyBackSpace" onclick="backSpaceHandler()">Backspace</key>
+                </row>
+            </keyboard>
+        </div>
+    </div>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
